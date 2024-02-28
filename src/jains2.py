@@ -5,11 +5,8 @@ import re
 def convert_to_kbps(value, unit):
     if unit == 'Mbps':
         return value * 1000  # Convert Mbps to Kbps
-    elif unit == 'Kbps':
-        return value
     else:
-        return value
-
+        return value #Else if it is already kbps, we return the value, since we only have Mbps and Kbps
 
 def calculate_jfi(inputs):
     n = len(inputs)  # Length of inputs for N
