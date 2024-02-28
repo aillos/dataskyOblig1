@@ -16,3 +16,11 @@ over a maximum of 30 hops:
  11    11 ms     9 ms    11 ms  arn09s19-in-f4.1e100.net [216.58.207.228]
 
 Trace complete.
+
+
+Traceroute discovers the path to a remote host by sending a series of packets with incrementally increasing Time-To-Live (TTL) values, starting from 1. 
+The TTL value determines the maximum number of hops (routers traversed) a packet can take before it is discarded. 
+Each time a packet is forwarded by a router, the TTL is decremented by 1. When the TTL reaches 0, the router discards the packet and sends an ICMP "Time Exceeded" message back to the source. 
+Traceroute uses these messages to identify each hop along the path to the destination. By increasing the TTL by 1 for each successive batch of packets, traceroute can build a list of routers that the packets traverse on their way to the target host. 
+Once the packets reach the destination (identified when a "Destination Unreachable" or similar message is received), traceroute completes its path discovery.
+In our testing we see how the packets are traversing, first through telia, then to twelve99 and later on to 1e100, which a google search tells us is google's search servers.
