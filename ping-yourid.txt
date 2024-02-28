@@ -8,3 +8,9 @@ Ping results for gaia.cs.umass.edu:
 
 Ping results for sydney.edu.au:
 Minimum RTT: mdev = 277.364 ms, Average RTT: 278.923 ms, Maximum RTT: 281.665 ms
+
+
+Differences in the minimum round-trip time (RTT) to each host are influenced by several factors, including geographical distance, network path efficiency, and server response time. 
+For instance, the significantly higher minimum RTT for sydney.edu.au compared to other hosts likely reflects the greater physical distance and potentially more complex network routing required to reach Australia from my location. 
+Conversely, oslomet.no and ox.ac.uk show lower minimum RTTs, indicating they are relatively closer to my location. The absence of data for gaia.cs.umass.edu prevents comparison but suggests potential issues with reaching the host or collecting reliable measurements.
+When doing regular testing, meaning by entering the site on my browser, we were able to reach it. But not through using ping
